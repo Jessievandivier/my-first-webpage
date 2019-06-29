@@ -1,74 +1,67 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
 
 
 </head>
+
 <body>
 
-<div class="square blue"></div>
-<div class="square green"></div>
-<div class="square blue green"></div>
+  <div class="square blue"></div>
+  <div class="square green"></div>
+  <div class="square blue green"></div>
 
 
-<style>
+  <style>
+    .green.square {
+      width: 100px;
+    }
 
-.green.square {
-  width: 100px;
-}
+    .square {
+      height: 50px;
+      width: 50px;
+    }
 
-.square{
-  height: 50px;
-  width: 50px;
-}
+    .square.blue.green {
+      background: red;
+      width: 50px;
+    }
 
-.square.blue.green {
-background: red;
-  width: 50px;
-}
+    .green {
+      background-color: green;
+    }
 
-.green {
-  background-color: green;
-}
-
-.blue {
-background-color: blue;
-}
-
-
-
-</style>
+    .blue {
+      background-color: blue;
+    }
+  </style>
 
 
- <input type="button"
-value="click me"
-onclick="addsquare()"
-/>
- 
- <input type="button"
-value="click me" 
-/>
+  <input type="button" value="click me" onclick="addsquare()" />
+
+  <input type="button" value="click me" />
 
 
-<!--onclick=(addsquare)-->
+  <!--onclick=(addsquare)-->
 
-<script>
-function addsquare () {
-console.log ("hello world")
-var elDiv = document.createElement('div');
-elDiv.className = "blue square"
-document.body.appendChild(elDiv)
+  <script>
+    function addsquare() {
+      console.log("hello world")
+      var elDiv = document.createElement('div');
+      elDiv.className = "blue square"
+      document.body.appendChild(elDiv)
 
-}
+    }
 
 
-</script>
+  </script>
 
 
 
-<!-- TODO: add two buttons, one appends a new square to document body on click.
+  <!-- TODO: add two buttons, one appends a new square to document body on click.
 Second button switches (toggle like jquery class toggle) all blue and green squares on click. -->
 
 </body>
-</html>
 
+</html>
